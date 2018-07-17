@@ -10,8 +10,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import roc_auc_score
 from datetime import date
-
-
+    
 data = pd.read_csv('data/Combined_News_DJIA.csv')
 train = data[data['Date'] < '2015-01-01']
 test = data[data['Date'] > '2014-12-31']
